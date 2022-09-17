@@ -1,0 +1,33 @@
+.flexbox-container{
+     /* flexibility of different elements in the page */
+     display: flex;
+     flex-wrap: wrap;
+     /* main axis will follow the flex whether row or column wise & vice versa for the cross axis */
+     flex-direction: row;
+     /* justify-content: space-between; */
+     justify-content: space-around;
+     /* items will appear as intended unlike stretch which will take the max posible state */
+     align-items: center; 
+     /* for vertical alignment */
+     /* height: 600px;
+     align-content: center; */
+}
+
+.flexbox-item{
+     width: 200px;
+     margin: 10px;
+     border: 3px solid #333;
+     background-color: #dfdfdf;
+}
+
+.flexbox-item-1{
+     min-height: 100px;
+}
+
+.flexbox-item-2{
+     min-height: 200px;
+}
+
+.flexbox-item-3{
+     min-height: 500px;
+}

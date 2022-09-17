@@ -1,0 +1,36 @@
+.flexbox-container{
+     display: flex;
+}
+
+.flexbox-item{
+     width: 200px;
+     margin: 10px;
+     border: 3px solid #333;
+     background-color: #dfdfdf;
+}
+
+.flexbox-item-1{
+     min-height: 100px;
+     /* item one not to shrink */
+     flex-shrink: 0;
+     order: 3;
+}
+
+.flexbox-item-2{
+     min-height: 200px;
+     /* take reamining twice amount of space  remaining*/
+     flex-grow: 2;
+     /* for them to start at 0px width not 200  */
+     flex-basis: 0;
+     /* overide align content */
+     align-self: center;
+     /* not advisable to change order */
+     order: 3;
+}
+
+.flexbox-item-3{
+     min-height: 300px;
+     flex-grow: 1;
+     flex-basis: 0;
+     order: 2;
+}
