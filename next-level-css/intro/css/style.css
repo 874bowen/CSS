@@ -1,0 +1,13 @@
+/* 
+css rule:
+   selector => css
+   property => color, font-size
+   property-value => palevioletred, 64px
+   declaration => property + property value
+
+validate css: https.//jigsaw.w3.org/css-validator/validator
+*/
+p {
+   font-size: 64px;
+   color: palevioletred;
+}
