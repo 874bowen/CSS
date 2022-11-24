@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <!-- 
+      Internal CSS does NOT take precedence over the External CSS. The order in which they are read makes the precedence. If external is read first then internal will take precedence to internal and vice versa.
+
+    -->
+   <style>
+      p {
+         color: darkblue; 
+      }
+   </style>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <!-- Because inline CSS is applied directly to either internal or external because it is directly applied to the html element -->
+   <p style="color:rgb(64, 74, 54)">I'm learning CSS</p>
+</body>
+</html>
