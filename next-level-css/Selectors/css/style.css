@@ -1,0 +1,51 @@
+/* CSS runs from top down but specificity takes precedence */
+
+/* Universal Selector - select all */
+* {
+   /* border: 2px solid salmon; */
+}
+
+/* Element Selector */
+body {
+   /* 
+   * Inheritance - applies to all the child elements. Only properties related to font and typography (color, alignment) are inherited things like border applies to a specific element 
+   
+   * form elements DO NOT inherit font and typography settings
+   */
+   font-size: 22px;
+}
+
+main {
+   /* selecting things inside the main selector */
+   font-family: monospace!important;
+}
+
+button, input, textarea, select {
+   font: inherit;
+} 
+
+p {
+   color: palevioletred;
+}
+/* Class Selector: can be used more than once (reusable) no class is more specific than selecting or paragraphs */
+.gray {
+   color: grey;
+}
+
+/* id Selector: exist once and should be unique rarely use id's*/
+
+#second {
+   font-style: italic;
+}
+
+/* Grouping selectors */
+h1, h2 {
+   /* h1 h2 means h2 that is inside h1 */
+   color: burlywood;
+}
+
+p > span {
+   /* span that is a direct child of p */
+   text-transform: uppercase;
+   background-color: gold;
+}
