@@ -1,0 +1,18 @@
+body {
+   font-size: 22px;
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 1.5;
+   background-color: #ffefd5;
+   color: rgb(0, 0, 0);
+
+}
+
+p {
+   /* color: rgba(0, 130, 0, 0.5); */
+   color: #333; /* #333333 -> shorthand */
+   /* if two adjacent values are same -> 00AA11 not all have short hands only those whose adjacent or (pair) are equal */
+   color: #808080; /* no shorthand*/
+   background-color: hsla(170, 16%, 93%, 0.34);
+}
+
+/* check coolors.co , webAIM */
