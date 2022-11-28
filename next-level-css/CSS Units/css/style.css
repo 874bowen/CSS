@@ -1,0 +1,30 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+main {
+   /* width: 50vw; */
+   background-color: aqua;
+   font-size: 2rem;
+}
+
+body {
+   width: 100%;
+   min-height: 100vh;
+}
+
+p {
+   /* default font size is 16px, 1rem -> rem is relative to root */
+   font-size: 2rem; /* absolute font-size is not good */
+   /* width: 20ch; */
+   /* ch is the size of the character 0*/
+}
+
+h1 {
+   border: 2px dashed rebeccapurple;
+   width: 50%;
+   font-size: 2rem;
+   padding: 0.3em; /* 1em here means 2rem (looks at the element) */
+}
+
