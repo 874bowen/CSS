@@ -1,0 +1,38 @@
+/* the browser sometimes sets some styling for our elements (ctrl + shift + i) under elements styles -> computed but we want to take full control of our styling we need a CSS RESET (*) */
+* {
+   margin: 0px;
+   padding: 0px;
+   /* default box sizing is content box */
+   /* box-sizing: content-box;   */
+   /* size of the content and the content only */
+   box-sizing: border-box;  /* size of the content and the content, border, padding and NOT margin */
+}
+.container {
+   border: 5px double rebeccapurple;
+   /* border-top: 5px solid;
+   border-right: 10px dotted;
+   border-bottom: 10px ridge rgb(198, 38, 188);
+   border-right: 10px dotted; */
+   font-size: 2rem;
+   margin: 1.5em;
+   /* margin-top: 1.5rem;
+   margin-right: 1.5rem;
+   margin-bottom: 2rem;
+   margin-left: 3rem; */
+   /* margin: 1.5rem 2em 3em 4em; */
+   padding: 0.5em; /* 1em here means 2rem (looks at the element) */
+   outline: 5px solid pink;
+   outline-offset: 10px; /* does not take space can be negative (-10px) */
+}
+
+/* box model to circle */
+.circle {
+   margin: 3rem auto; /* top & bottom 3rem while centered horizontally (auto) left & right */
+   background-color: blanchedalmond;
+   width: 100px;
+   height: 100px;
+   border: 2px solid black;
+   border-radius: 50px;
+   outline: 2px solid coral;
+   outline-offset:  0.25rem;
+}
