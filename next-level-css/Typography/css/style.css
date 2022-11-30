@@ -1,0 +1,38 @@
+/* 
+
+Typography is the way that text 
+is arranged and presented
+
+*/
+
+body {
+   padding: 10%;
+   font-size: 2rem; /* font and text elements style gets inherited */
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+/* input, button {
+   font: inherit;
+} */
+
+p {
+   text-decoration: overline; /* overline, underline etc */
+   text-decoration: none;
+   text-transform: capitalize;
+   text-align: justify; /* uniform left and right */
+   text-indent: 2em; /* indents first line */
+   /* line-height: 1.5; */
+   /* letter-spacing: 0.1em; */
+   /* word-spacing: 0.2em; */
+   
+}
+
+/* 
+
+google: web safe fonts 
+TODO: look at google fonts
+
+*/
+
+
+
