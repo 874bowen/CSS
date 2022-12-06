@@ -1,0 +1,33 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   padding: 10%;
+   font-size: 2rem; /* font and text elements style gets inherited */
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+a {
+   /* text-decoration: none; */
+   cursor: pointer;
+   color: hsl(207, 44%, 49%);
+   
+}
+
+a:visited {
+   color: palevioletred;
+}
+a:hover, a:focus {
+   /* color: hsl(189, 44%, 49%); */
+   color: hsla(207, 44%, 49%, 0.67);
+   /* opacity: 0.8; */
+   background-color: burlywood;
+}
+a:active {
+   color: crimson;
+}
+/* order => a, a:visited, a:hover, a:active */
+/* TODO: check specificity calculator */
