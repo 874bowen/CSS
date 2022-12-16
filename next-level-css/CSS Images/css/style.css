@@ -1,0 +1,74 @@
+/* Begin Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	/* 
+	images are inline elements
+	*/
+	display: block;
+}
+/* End Reset */
+
+/* Utility Classes */
+.nowrap {
+	white-space: nowrap;
+}
+
+.offscreen {
+	position: absolute;
+	left: -1000px;
+}
+/* End Utility Classes */
+body {
+	font-family: Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	min-height: 100vh;
+}
+
+.hero {
+	border-bottom: 2px solid salmon;
+	padding: 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 30px;
+	background-color: rgb(251, 210, 156);
+	background-repeat: repeat-x;
+	background-image: url('../img/bg.jpg');
+	background-size: contain;
+}
+
+.h1 {
+	/* font-size: 300%; */
+	color: beige;
+}
+
+.profile-pic-figure {
+	width: 50%;
+}
+
+.profile-pic-figure img {
+	width: 100%;
+	height: auto;
+	min-width: 100px;
+	border: 5px double palevioletred;
+	border-radius: 75%;
+}
+.example {
+	margin-top: 1rem;
+	padding-left: 20px;
+	border: 1px solid peachpuff;
+}
+
+.example img {
+	/* 
+	responsive image 
+	images are inline element
+	*/
+	width: 25%;
+	height: auto;
+
+}
