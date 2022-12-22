@@ -29,7 +29,7 @@ body {
 	/* background-image: url("../img/hb_logo.png"), linear-gradient(to left, palevioletred, white);
 	background-repeat: repeat-y, no-repeat;
 	background-size: cover; */
-	background: repeat-y right center url("../img/hb_logo.png"), no-repeat linear-gradient(to left, rgba(216, 112, 147, 0.346), white);
+	background: repeat-y right center url("../img/bubbles-png-11425.png"), no-repeat linear-gradient(to left, rgba(216, 112, 147, 0.346), white);
 	/* background-position: right center; */
 	background-size: 20%, auto;
 }
@@ -38,8 +38,8 @@ body {
 	background-color: rgb(251, 210, 156);
 	background-repeat: no-repeat;
 	background-image: url('../img/bg.jpg');
-	background-size: 20%, auto;
-	background-position: top right;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .hero {
@@ -103,7 +103,7 @@ body {
 
 .clip {
 	font-weight: bold;
-	font-size: 18rem;
+	/* font-size: 18rem; */
 	text-align: center;
 	background-image: url("../img/bg.jpg");
 	background-size: cover;
