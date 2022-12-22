@@ -25,13 +25,19 @@ img {
 body {
 	font-family: Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	min-height: 100vh;
+	background-color: aliceblue;
+	background-image: url("../img/hb_logo.png"), linear-gradient(to left, palevioletred, white);
+	background-repeat: repeat-y, no-repeat;
+	background-size: cover;
+	
+	background-position: right center;
 }
 
 .container {
 	background-color: rgb(251, 210, 156);
 	background-repeat: no-repeat;
 	background-image: url('../img/bg.jpg');
-	background-size: cover;
+	background-size: 20%, auto;
 	background-position: top right;
 }
 
@@ -92,4 +98,19 @@ body {
 .divc div {
 	background-color: hotpink;
 	padding: 2rem;
+}
+
+.clip {
+	font-weight: bold;
+	font-size: 18rem;
+	text-align: center;
+	background-image: url("../img/bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-transform: uppercase;
+	-webkit-background-clip: text;
+	/* color: hsla(0, 0%, 0%, 0.298);
+	 */
+	 background-clip: text; /* fallback for firefox */
+	 color: transparent;
 }
