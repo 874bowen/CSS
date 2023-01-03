@@ -10,6 +10,28 @@
 	box-sizing: border-box;
 }
 
+/* || VARIABLES */
+/* everything inherits from this */
+:root{
+	/* FONT */
+	--FF: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+	Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	--FS: 1.5rem;
+	--FS-XL: 3rem;
+
+	/* COLORS */
+	--BGCOLOR: #475569;
+	--ALT-BGCOLOR: #1e293b;
+	--RADIAL-COLOR: whitesmoke;
+	--LIGHT-COLOR: whitesmoke;
+	--DARK-COLOR: #000;
+
+	/* GENERAL */
+	--PADDING: 0.5rem;
+	--SHADOWS: 0 6px 5px -5px var(--DARK-COLOR);
+	--BORDERS: 2px solid var(--DARK-COLOR);
+}
+
 img {
 	display: block;
 	max-width: 100%;
@@ -25,11 +47,10 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	font: 1.5rem system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font: var(--FS) var(--FF) ;
 	min-height: 100vh;
-	background-color: #475569;
-	background-image: radial-gradient(whitesmoke, #475569);
+	background-color: var(--BGCOLOR);
+	background-image: radial-gradient(var(--RADIAL-COLOR), var(--BGCOLOR));
 	display: flex;
 	flex-direction: column;
 }
@@ -42,8 +63,8 @@ body {
 header,
 footer {
 	position: sticky;
-	background-color: #1e293b;
-	color: whitesmoke;
+	background-color: var(--ALT-BGCOLOR);
+	color: var(--LIGHT-COLOR);
 	text-align: center;
 }
 
@@ -53,8 +74,9 @@ header {
 
 nav {
 	background-color: white;
-	padding: 0.5rem;
-	border-bottom: 2px solid #000;
+	padding: var(--PADDING);
+	/* border-bottom: var(--BORDERS);/ */
+	box-shadow: var(--SHADOWS);
 	font-weight: bolder;
 	display: flex;
 	justify-content: space-evenly;
@@ -65,7 +87,7 @@ nav a,
 nav a:visited '
  */
 nav a:any-link {
-	color: #000;
+	color: var(--DARK-COLOR  );
 }
 
 /* 
