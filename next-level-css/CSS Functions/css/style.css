@@ -1,0 +1,129 @@
+/* 
+* radial gradient, hsl, url, math funcions e.t.c., are css functions
+*/
+/* || RESET */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* || VARIABLES */
+/* everything inherits from this */
+:root{
+	/* FONT */
+	--FF: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+	Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	/* --FS: min(2.25rem, 3vh);  */
+	/* takes the min of the two never large than 2.25rem(absolute val): relative - 3vh */
+	
+	/* chooses max */
+	/* --FS: max(1.75rem, 3vh);  */
+	--FS: clamp(1.75rem, 3vh, 2.25rem);
+	--FS-SM: clamp(1.25rem, 3vh, 1.5rem);
+	--FS-XL: 3rem;
+
+	/* COLORS */
+	--BGCOLOR: #475569;
+	--ALT-BGCOLOR: #1e293b;
+	--RADIAL-COLOR: whitesmoke;
+	--LIGHT-COLOR: whitesmoke;
+	--DARK-COLOR: #000;
+
+	/* GENERAL */
+	--PADDING: 0.5em;
+	--SHADOWS: 0 6px 5px -5px var(--DARK-COLOR);
+	--BORDERS: 2px solid var(--DARK-COLOR);
+
+	/* SQUARE */
+	--SQUARE-BGCOLOR: papayawhip;
+	--SQUARE-SIZE: max(150px, 20vw);
+}
+
+/* dark-mode */
+@media (prefers-color-scheme: light) {
+	:root {
+		--BGCOLOR: #000;
+		--ALT-BGCOLOR: #333;
+		--RADIAL-COLOR: hsl(180, 17%, 26%);
+		--SQUARE-BGCOLOR: rgb(182, 149, 154);
+	}
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+/* || GENERAL STYLES */
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font: var(--FS) var(--FF) ;
+	min-height: 100vh;
+	background-color: var(--BGCOLOR);
+	background-image: radial-gradient(var(--RADIAL-COLOR), var(--BGCOLOR));
+	display: flex;
+	flex-direction: column;
+}
+
+header, nav, footer {
+	display: grid;
+	place-content: center;
+	grid-template-columns: 100%;
+	text-align: center;
+}
+
+header,
+footer {
+	position: sticky;
+	background-color: var(--ALT-BGCOLOR);
+	color: var(--LIGHT-COLOR);
+}
+
+header {
+	top: 0;
+}
+
+nav {
+	background-color: var(--LIGHT-COLOR);
+	color: var(--DARK-COLOR);
+	padding: var(--PADDING);
+	border-bottom: var(--BORDERS);/
+	box-shadow: var(--SHADOWS);
+}
+
+main {
+	flex-grow: 1;
+	/* padding: 10px 0;
+	display: flex;
+	justify-content: space-evenly;
+	flex-flow: row wrap;
+	align-items: center;
+	gap: min(4vw, 15px); */
+	padding: var(--PADDING);
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+}
+
+footer {
+	bottom: 0;
+}
+/* || FEATURES */
+
+/* redefining a variable for a class */
+.square--highlight {
+	--SQUARE-BGCOLOR: cornflowerblue;
+}
+
+.square{
+	background-color: var(--SQUARE-BGCOLOR);
+	width: var(--SQUARE-SIZE);
+	height: var(--SQUARE-SIZE);
+	border: var(--BORDERS);
+	border-radius: 15px;
+	display: grid;
+	place-content: center;
+	font-size: var(--FS-XL);
+	box-shadow: var(--SHADOWS);
+}
