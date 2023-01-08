@@ -79,7 +79,7 @@ nav {
 	background-color: var(--LIGHT-COLOR);
 	color: var(--DARK-COLOR);
 	padding: var(--PADDING);
-	border-bottom: var(--BORDERS);/
+	border-bottom: var(--BORDERS);
 	box-shadow: var(--SHADOWS);
 }
 
